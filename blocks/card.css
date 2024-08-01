@@ -20,6 +20,19 @@
   opacity: 40%;
 }
 
+.card__pencil-icon {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.card__plus-icon {
+  width: 12px;
+  height: 12px;
+  border: 2px;
+  margin-right: 8px;
+}
+
 @media screen and (max-width: 627px) {
   .card__image {
     height: 288px;
