@@ -3,6 +3,7 @@
   width: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 10px;
 }
 
 .card__content {
@@ -15,9 +16,12 @@
   background-image: url(../images/likes.svg);
   width: 23px;
   height: 20px;
+  margin-top: 12px;
+  padding: 0;
+  opacity: 40%;
   border: none;
   background-color: transparent;
-  opacity: 40%;
+  transition: 0.05s;
 }
 
 .card__pencil-icon {
@@ -31,6 +35,10 @@
   height: 12px;
   border: 2px;
   margin-right: 8px;
+}
+
+.card__like-button:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 627px) {

@@ -17,6 +17,7 @@
 
 .profile__name {
   margin: 0 0 12px;
+  color: #212121;
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
@@ -36,6 +37,10 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+  font-weight: 500;
+  line-height: 1;
+  color: #212121;
+  opacity: 70%;
 }
 
 .profile__edit-button {
@@ -50,6 +55,9 @@
   border-radius: 90px;
   width: 124px;
   display: flex;
+  padding: 0;
+  opacity: 0.6;
+  transition: 0.5s;
 }
 
 .profile__add-button {
@@ -63,6 +71,9 @@
   height: 52px;
   border-radius: 8px;
   margin: 136px 0 auto auto;
+  padding: 0;
+  transition: 0.5s;
+  opacity: 1;
 }
 
 @media screen and (max-width: 627px) {
@@ -102,4 +113,12 @@
     max-width: 288px;
     width: 100%;
   }
+}
+
+.profile__edit-button:hover {
+  opacity: 1;
+}
+
+.profile__add-button:hover {
+  opacity: 0.6;
 }
