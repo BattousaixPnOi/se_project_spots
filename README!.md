@@ -1,4 +1,4 @@
-# Spots
+# Project 3: Spots
 
 Using Figma as an image sharing site
 
@@ -11,6 +11,9 @@ This project is about creating a responsive website that can look different depe
     - HTML
     - CSS
     - Responsive Design
+    - Flex Box
+    - Grid Layout
+    - Figma reference
 
 ## Deployment
 
