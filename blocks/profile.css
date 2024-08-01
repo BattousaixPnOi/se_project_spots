@@ -113,6 +113,11 @@
     max-width: 288px;
     width: 100%;
   }
+
+  .profile__edit-button {
+    display: flex;
+    align-self: center;
+  }
 }
 
 .profile__edit-button:hover {
