@@ -8,6 +8,7 @@
   margin-right: 20px;
   height: 190px;
   width: 190px;
+  object-fit: cover;
 }
 
 .profile__column {
@@ -76,6 +77,19 @@
   opacity: 1;
 }
 
+.profile__pencil-icon {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.profile__plus-icon {
+  width: 12px;
+  height: 12px;
+  border: 2px;
+  margin-right: 8px;
+}
+
 @media screen and (max-width: 627px) {
   .profile {
     flex-direction: column;
@@ -122,8 +136,10 @@
 
 .profile__edit-button:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .profile__add-button:hover {
   opacity: 0.6;
+  cursor: pointer;
 }

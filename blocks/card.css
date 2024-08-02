@@ -24,21 +24,9 @@
   transition: 0.05s;
 }
 
-.card__pencil-icon {
-  margin-right: 8px;
-  width: 16px;
-  height: 16px;
-}
-
-.card__plus-icon {
-  width: 12px;
-  height: 12px;
-  border: 2px;
-  margin-right: 8px;
-}
-
 .card__like-button:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {
