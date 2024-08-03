@@ -4,10 +4,6 @@
   margin-bottom: 60px;
 }
 
-.card:last-child {
-  margin-bottom: 40px;
-}
-
 .cards__list {
   list-style-type: none;
   padding: 0;
@@ -18,19 +14,9 @@
   gap: 40px 20px;
 }
 
-.card__title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  margin-bottom: 0;
-}
-
 @media screen and (max-width: 627px) {
   .cards__list {
     grid-template-columns: repeat(auto-fit, 288px);
-  }
-
-  .card__title {
-    width: 90%;
+    gap: 20px;
   }
 }

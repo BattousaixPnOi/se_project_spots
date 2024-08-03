@@ -12,6 +12,17 @@
   justify-content: space-between;
 }
 
+.card__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 353px;
+}
+
 .card__like-button {
   background-image: url(../images/likes.svg);
   width: 23px;
@@ -24,6 +35,10 @@
   transition: 0.05s;
 }
 
+.card:last-child {
+  margin-bottom: 40px;
+}
+
 .card__like-button:hover {
   opacity: 1;
   cursor: pointer;
@@ -32,5 +47,11 @@
 @media screen and (max-width: 627px) {
   .card__image {
     height: 288px;
+  }
+
+  .card__title {
+    width: 90%;
+    font-size: 16px;
+    line-height: 1;
   }
 }
