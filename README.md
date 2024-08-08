@@ -20,3 +20,4 @@ This project is about creating a responsive website that can look different depe
 This webpage is deployed to GitHub Pages
 
 - [My GitHub](https://battousaixpnoi.github.io/se_project_spots)
+- [Project 3 Video](https://youtu.be/ulgwVHBXZxc)
