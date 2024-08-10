@@ -55,7 +55,7 @@
     line-height: 1;
   }
 }
-@media and (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .card:last-child {
     margin-bottom: 20px;
   }
