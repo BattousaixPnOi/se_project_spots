@@ -25,7 +25,7 @@ const initialCards = [
   },
 ];
 
-const profileEditButton = document.querySelector(".profile_edit-button");
+const profileEditButton = document.querySelector(".profile__edit-button");
 const editModal = document.querySelector("#edit-modal");
 const editModalCloseBtn = editModal.document.querySelector(
   ".modal__close-button"
