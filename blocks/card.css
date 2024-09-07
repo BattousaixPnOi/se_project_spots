@@ -44,6 +44,11 @@
   cursor: pointer;
 }
 
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 627px) {
   .card__image {
     height: 288px;
