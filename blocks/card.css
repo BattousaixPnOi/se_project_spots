@@ -49,6 +49,31 @@
   justify-content: space-between;
 }
 
+.card__like-button_liked {
+  background-image: url(../images/redheart.svg);
+  opacity: 1;
+}
+
+.card__like-button_liked:hover {
+  background-image: url(../images/hoverheart.svg);
+}
+
+.card__delete-button {
+  background-image: url(../images/DeleteButton.svg);
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  background-size: contain;
+  border: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.card__delete-button:hover {
+  background-image: url(../images/DeleteButtonHover.svg);
+}
+
 @media screen and (max-width: 627px) {
   .card__image {
     height: 288px;

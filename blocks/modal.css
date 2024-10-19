@@ -41,6 +41,12 @@
   line-height: 1;
   font-size: 22px;
   padding: 0px;
+  transition: background 0.03s;
+}
+
+.modal__close-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
 }
 
 .modal__title {
@@ -80,6 +86,12 @@
   background-color: rgba(33, 33, 33, 1);
   color: #fff;
   border: none;
+  transition: background 0.3s;
+}
+
+.modal__submit-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
 }
 
 ::placeholder {
