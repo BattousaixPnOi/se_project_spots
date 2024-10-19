@@ -56,7 +56,9 @@ function getCardElement(data) {
   const cardNameEl = cardElement.querySelector(".card__title");
   const cardImageEl = cardElement.querySelector(".card__image");
   const cardLikeBtn = cardElement.querySelector(".card__like-button");
-  // TODO - select the delete button
+
+  //TODO - add delete
+  const cardDeleteBtn = cardElement.querySelector(".card__delete-button");
 
   cardNameEl.textContent = data.name;
   cardImageEl.src = data.link;
@@ -67,7 +69,14 @@ function getCardElement(data) {
   });
 
   // TODO - set the listener to delete button
+  cardDeleteBtn.addEventListener("click", () => {
+    cardDeleteBtn.remove();
+  });
+
   // TODO - handler should remove the card from the DOM (Sprint 4)
+  function handleDeleteCard(evt) {
+    evt.preventDefault();
+  }
 
   return cardElement;
 }
