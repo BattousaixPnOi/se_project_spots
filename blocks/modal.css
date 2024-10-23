@@ -10,16 +10,16 @@
   align-items: center;
   justify-content: center;
   padding: 0 20px;
+  opacity: 0;
   visibility: hidden;
-  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  transition: visibility 0s linear 0.3s, opacity 0.3s linear;
 }
 
 .modal__opened {
   display: flex;
   visibility: visible;
   opacity: 1;
-  transition-delay: 0s;
-  pointer-events: auto;
+  transition: visibility 0s, opacity 0.6s;
 }
 
 .modal__content {
@@ -47,14 +47,16 @@
   color: #fff;
   margin-top: 8px;
   margin-bottom: 40px;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 4px 8px;
+  position: absolute;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .modal__content_type_preview {
   padding: 0;
   position: relative;
+  max-width: fit-content;
 }
 
 .modal__image {
