@@ -70,10 +70,10 @@ function getCardElement(data) {
 
   // TODO - set the listener to delete button
   cardDeleteBtn.addEventListener("click", () => {
-    cardDeleteBtn.remove();
+    cardElement.remove();
   });
 
-  // TODO - handler should remove the card from the DOM (Sprint 4)
+  // TODO - handler should remove the card
   function handleDeleteCard(evt) {
     evt.preventDefault();
   }
@@ -128,5 +128,5 @@ cardForm.addEventListener("submit", handleAddCardSubmit);
 
 initialCards.forEach((item) => {
   const cardElement = getCardElement(item);
-  cardsList.prepend(cardElement);
+  cardsList.append(cardElement);
 });
