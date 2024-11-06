@@ -55,6 +55,7 @@
   padding: 0;
   position: relative;
   max-width: fit-content;
+  background: no-repeat;
 }
 
 .modal__image {
@@ -79,18 +80,34 @@
 
 .modal__close-button {
   position: absolute;
-  top: 32px;
+  top: 30px;
   right: 50px;
   width: 40px;
   height: 40px;
   opacity: 40%;
   border: none;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background: transparent url(../images/closebuttonfaded.svg);
   font-weight: 500;
   line-height: 1;
   font-size: 22px;
-  padding: 0px;
+  padding: 0;
   transition: background 0.03s;
+}
+
+.modal__close {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  line-height: 1;
+  font-size: 22px;
+  padding: 0;
+  transition: background 0.03s;
+  opacity: 40%;
+  border: none;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .modal__close_type_preview {
@@ -104,7 +121,7 @@
 }
 
 .modal__close-button:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: url(../images/closebuttondark.svg);
   cursor: pointer;
 }
 
@@ -116,6 +133,7 @@
   font-size: 32px;
   width: 169px;
   height: 32px;
+  color: rgba(33, 33, 33, 1);
 }
 
 .modal__label {
@@ -141,6 +159,7 @@
 .modal__submit-button {
   width: 156px;
   height: 52px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   padding: 18px 0;
   border-radius: 8px;
   background-color: rgba(33, 33, 33, 1);
@@ -159,7 +178,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
-  color: rgba(33, 33, 33, 1);
+  color: rgba(33, 33, 33, 0.4);
 }
 
 @media screen and (max-width: 627px) {
@@ -168,6 +187,10 @@
   }
 
   .modal__container {
+    padding: 12px;
+  }
+
+  .modal__content {
     padding: 12px;
   }
 
@@ -188,7 +211,7 @@
 
   .modal__label {
     margin-bottom: 24px;
-    color: rgba(33, 33, 33, 0.3);
+    color: rgba(33, 33, 33, 0.7);
   }
 
   .modal__submit-button {
@@ -199,12 +222,21 @@
 @media screen and (max-width: 320px) {
   .modal__close_type_preview {
     top: -45px;
-    right: -6px;
+    right: 16px;
   }
 
+  .modal__title {
+    color: rgba(33, 33, 33, 1);
+    margin-bottom: 24px;
+  }
   .modal__image {
     max-width: fit-content;
     max-height: fit-content;
     width: 100%;
+  }
+
+  .modal__close-button {
+    right: 12px;
+    top: 12px;
   }
 }
