@@ -55,11 +55,13 @@
 
 .card__like-button_liked {
   background-image: url(../images/redheart.svg);
+  background-repeat: no-repeat;
   opacity: 1;
 }
 
 .card__like-button_liked:hover {
   background-image: url(../images/hoverheart.svg);
+  background-repeat: no-repeat;
 }
 
 .card__delete-button {

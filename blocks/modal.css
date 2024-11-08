@@ -120,6 +120,11 @@
   height: 40px;
 }
 
+.modal__close_type_preview:hover {
+  background: url(../images/closebuttonfaded.svg);
+  cursor: pointer;
+}
+
 .modal__close-button:hover {
   background: url(../images/closebuttondark.svg);
   cursor: pointer;
