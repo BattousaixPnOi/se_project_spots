@@ -89,7 +89,9 @@
                   maxlength="40"
                   required
                 />
-                <span class="modal__error">Please fill out this field.</span>
+                <span id="profile-name-input-error" class="modal__error"
+                  >Please fill out this field.</span
+                >
               </label>
               <label for="profile-description-input" class="modal__label">
                 Description
@@ -102,7 +104,7 @@
                   maxlength="200"
                   required
                 />
-                <span class="modal__error"
+                <span id="profile-description-input-error" class="modal__error"
                   >Please lengthen this text to 2 characters or more (you are
                   currently using 1 character).</span
                 >
@@ -132,7 +134,9 @@
                 placeholder="Paste a link to the picture"
                 required
               />
-              <span class="modal__error">Please enter a URL.</span>
+              <span id="add-card-link-input-error" class="modal__error"
+                >Please enter a URL.</span
+              >
             </label>
             <label for="add-card-name-input" class="modal__label"
               >Caption
@@ -146,7 +150,9 @@
                 maxlength="30"
                 required
               />
-              <span class="modal__error">Please fill out this field.</span>
+              <span id="add-card-name-input-error" class="modal__error"
+                >Please fill out this field.</span
+              >
             </label>
             <button type="submit" class="modal__submit-button">Save</button>
           </form>
@@ -166,6 +172,7 @@
       </div>
     </div>
 
+    <script defer src="./scripts/validation.js"></script>
     <script defer src="./scripts/index.js"></script>
   </body>
 </html>
