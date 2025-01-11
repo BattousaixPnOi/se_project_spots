@@ -85,7 +85,11 @@
                   type="text"
                   class="modal__input"
                   placeholder="Type your name"
+                  minlength="2"
+                  maxlength="40"
+                  required
                 />
+                <span class="modal__error">Please fill out this field.</span>
               </label>
               <label for="profile-description-input" class="modal__label">
                 Description
@@ -94,7 +98,14 @@
                   type="text"
                   class="modal__input"
                   placeholder="Describe yourself"
+                  minlength="2"
+                  maxlength="200"
+                  required
                 />
+                <span class="modal__error"
+                  >Please lengthen this text to 2 characters or more (you are
+                  currently using 1 character).</span
+                >
               </label>
               <button type="submit" class="modal__submit-button">Save</button>
             </form>
@@ -119,7 +130,9 @@
                 class="modal__input"
                 name="link"
                 placeholder="Paste a link to the picture"
+                required
               />
+              <span class="modal__error">Please enter a URL.</span>
             </label>
             <label for="add-card-name-input" class="modal__label"
               >Caption
@@ -129,7 +142,11 @@
                 name="name"
                 class="modal__input"
                 placeholder="Type your caption"
+                minlength="2"
+                maxlength="30"
+                required
               />
+              <span class="modal__error">Please fill out this field.</span>
             </label>
             <button type="submit" class="modal__submit-button">Save</button>
           </form>
