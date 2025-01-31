@@ -44,6 +44,7 @@ const cardForm = cardModal.querySelector(".modal__form");
 const cardModalCloseBtn = cardModal.querySelector(".modal__close-button");
 const cardNameInput = cardModal.querySelector("#add-card-name-input");
 const cardLinkInput = cardModal.querySelector("#add-card-link-input");
+const cardSubmitBtn = cardModal.querySelector(".modal__submit-button");
 
 const previewModal = document.querySelector("#preview-modal");
 const previewModalImageEl = document.querySelector(".modal__image");
@@ -54,6 +55,8 @@ const previewModalCloseBtn = previewModal.querySelector(
 
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
+
+const modals = document.querySelectorAll(".modal");
 
 function getCardElement(data) {
   const cardElement = cardTemplate.content
@@ -94,10 +97,20 @@ previewModalCloseBtn.addEventListener("click", () => {
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  document.addEventListener("keydown", handleEscBtnClose);
 }
+
+modals.forEach((modal) => {
+  modal.addEventListener("click", function (evt) {
+    if (evt.target.classList.contains("modal")) {
+      closeModal(modal);
+    }
+  });
+});
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", handleEscBtnClose);
 }
 
 function handleEditFormSubmit(evt) {
@@ -114,7 +127,12 @@ function handleAddCardSubmit(evt) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   evt.target.reset();
+  disableButton(cardSubmitBtn, setting);
   closeModal(cardModal);
+}
+
+function handleDeleteCard(evt) {
+  evt.target.closest(".card").remove();
 }
 
 profileEditButton.addEventListener("click", () => {
@@ -142,3 +160,10 @@ initialCards.forEach((item) => {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });
+
+function handleEscBtnClose(evt) {
+  if ((evt.key = "escape")) {
+    const activeModal = document.querySelector(".modal_opened");
+    if (activeModal) closeModal(activeModal);
+  }
+}

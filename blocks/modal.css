@@ -141,6 +141,10 @@
   color: rgba(33, 33, 33, 1);
 }
 
+.modal__form {
+  margin-top: 32px;
+}
+
 .modal__label {
   display: flex;
   flex-direction: column;
@@ -180,7 +184,7 @@
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   padding: 18px 0;
   border-radius: 8px;
-  background-color: rgba(33, 33, 33, 1);
+  background-color: rgba(33, 33, 33, 0.5);
   color: #fff;
   border: none;
   transition: background 0.3s;
@@ -189,6 +193,11 @@
 .modal__submit-button:hover {
   background: rgba(0, 0, 0, 0.8);
   cursor: pointer;
+}
+
+.modal__submit-button_disabled {
+  background-color: rgba(33, 33, 33, 1);
+  cursor: not-allowed;
 }
 
 ::placeholder {
