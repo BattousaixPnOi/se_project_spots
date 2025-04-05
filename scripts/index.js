@@ -122,12 +122,10 @@ function handleEditFormSubmit(evt) {
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
-
   const inputValues = { name: cardNameInput.value, link: cardLinkInput.value };
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   evt.target.reset();
-  disableButton(cardSubmitBtn, setting);
   closeModal(cardModal);
 }
 
@@ -162,7 +160,7 @@ initialCards.forEach((item) => {
 });
 
 function handleEscBtnClose(evt) {
-  if (evt.key === "escape") {
+  if (evt.key === "Escape") {
     const activeModal = document.querySelector(".modal_opened");
     if (activeModal) {
       closeModal(activeModal);
