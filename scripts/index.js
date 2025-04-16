@@ -166,11 +166,6 @@ function handleEscBtnClose(evt) {
 }
 
 function openModal(modal) {
-  if (modal.querySelector(".modal__form")) {
-    const formEl = modal.querySelector(".modal__form");
-    resetValidation(formEl, settings);
-  }
-
   modal.classList.add("modal_opened");
   document.addEventListener("keydown", handleEscBtnClose);
 }
