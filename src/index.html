@@ -23,11 +23,20 @@
         </header>
         <main class="content">
           <section class="profile page__section">
-            <img
-              src="<%=require('./images/avatar.jpg')%>"
-              alt="Profile avatar"
-              class="profile__avatar"
-            />
+            <div class="profile__avatar-container">
+              <button class="profile__avatar-btn">
+                <img
+                  src="<%=require('./images/pencil-light.svg')%>"
+                  alt="Pencil icon"
+                  class="profile__pencil-icon"
+                />
+              </button>
+              <img
+                src="<%=require('./images/avatar.jpg')%>"
+                alt="Profile avatar"
+                class="profile__avatar"
+              />
+            </div>
             <div class="profile__column">
               <h1 class="profile__name">Bessie Coleman</h1>
               <p class="profile__description">Civil Aviator</p>
@@ -177,6 +186,55 @@
           <img class="modal__image" src="" alt="" />
           <p class="modal__caption"></p>
         </div>
+      </div>
+    </div>
+
+    <div class="modal" id="avatar-modal">
+      <div class="modal__content">
+        <button
+          type="button"
+          class="modal__close-button"
+          id="edit-close-button"
+        ></button>
+        <h2 class="modal__title">Edit avatar</h2>
+        <form
+          name="edit-profile"
+          class="modal__form"
+          id="edit-avatar-form"
+          novalidate
+        >
+          <label for="profile-name-avatar-input" class="modal__label">
+            Avatar <input id="profile-avatar-input" class="modal__input"
+            placeholder="avatar goes here" name:"avatar" />
+            <span id="profile-avatar-input-error" class="modal__error"
+              >Please fill out this field.</span
+            >
+          </label>
+          <button type="submit" class="modal__submit-button">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <-- TODO - style the modal properly -->
+    <div class="modal modal_is-opened" id="delete-modal">
+      <div class="modal__content">
+        <button
+          type="button"
+          class="modal__close-button"
+          id="edit-close-button"
+        ></button>
+        <h2 class="modal__title">
+          Are you sure you wanted to delete this image?
+        </h2>
+        <form class="modal__form" id="delete-form">
+          <button type="submit" class="modal__submit-button">Delete</button>
+          <button
+            type="button"
+            class="modal__submit-button modal__submit-button-cancel"
+          >
+            Cancel
+          </button>
+        </form>
       </div>
     </div>
   </body>
